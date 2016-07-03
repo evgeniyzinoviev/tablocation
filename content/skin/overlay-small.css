@@ -1,0 +1,8 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+.tab-label {
+  margin-top: -1px !important;
+  font-size: 0.8em;
+}
+.tab-url-label {
+  margin-top: 1px !important;
+}

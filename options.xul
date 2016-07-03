@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE mydialog SYSTEM "chrome://fxTabUrls/locale/mydialog.dtd">
+
+<vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<setting pref="extensions.tablocation.location" type="menulist" title="Display location as">
+  <menulist>
+    <menupopup>
+      <menuitem value="0" label="full URL" />
+      <menuitem value="1" label="host" />
+    </menupopup>
+  </menulist>
+</setting>
+<setting pref="extensions.tablocation.smaller" type="bool" title="Smaller tab title"/>
+<setting pref="extensions.tablocation.bold" type="bool" title="Bold tab title"/>
+</vbox>
