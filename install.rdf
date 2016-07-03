@@ -4,7 +4,7 @@
     <Description about="urn:mozilla:install-manifest">
         <em:id>tablocation@ch1p.com</em:id>
         <em:name>Tab Location</em:name>
-        <em:version>0.2.6</em:version>
+        <em:version>0.3.0</em:version>
         <em:type>2</em:type>
         <em:creator>ch1p</em:creator>
         <em:bootstrap>true</em:bootstrap>
