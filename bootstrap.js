@@ -202,7 +202,12 @@ var Controller = {
     }
   },
   tearDownWindow: function(chromeWindow) {
-    var tabsCount = chromeWindow.gBrowser.browsers.length;
+    var tabsCount;
+    try {
+      tabsCount = chromeWindow.gBrowser.browsers.length;
+    } catch (e) {
+      return
+    }
     for (var i = 0; i < tabsCount; i++) {
       Controller.tearDownTab(chromeWindow, i);
     }
