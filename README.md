@@ -1,6 +1,6 @@
 # tablocation
 
-The firefox addon. Tested on Firefox 38 under Linux.
+The firefox addon. Tested on Firefox 47 under Linux.
 
 See the screenshots.
 
