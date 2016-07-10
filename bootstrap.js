@@ -138,7 +138,7 @@ var Controller = {
 
     // Get some elements
     var tab = chromeWindow.gBrowser.tabContainer.childNodes[tabIndex];
-    var label = ownerDocument.getAnonymousElementByAttribute(tab, 'anonid', 'tab-label');
+    var label = ownerDocument.getAnonymousElementByAttribute(tab, 'class', 'tab-text tab-label');
 
     // DOM manipulations
     var vbox = createElement(ownerDocument, 'xul:vbox', { orient: 'vertical', flex: 1, anonid: 'tab-label-vbox' });
@@ -156,7 +156,7 @@ var Controller = {
       'class':        'tab-text tab-url-label',
       'xbl:inherits': 'value=visibleLabel,crop,accesskey,fadein,pinned,selected',
       'flex':         '1',
-      'anonid':       'tab-url-label',
+      //'anonid':       'tab-url-label',
       'role':         'presentation',
       'fadein':       'true',
       'selected':     'true',
@@ -187,7 +187,7 @@ var Controller = {
     var ownerDocument = chromeWindow.gBrowser.ownerDocument;
     var loc = getLocation(chromeWindow.gBrowser.browsers[tabIndex].contentDocument.location);
     var tab = chromeWindow.gBrowser.tabContainer.childNodes[tabIndex];
-    var url = ownerDocument.getAnonymousElementByAttribute(tab, 'anonid', 'tab-url-label');
+    var url = ownerDocument.getAnonymousElementByAttribute(tab, 'class', 'tab-text tab-url-label');
     if (url) {
       url.setAttribute('value', loc);
     }
